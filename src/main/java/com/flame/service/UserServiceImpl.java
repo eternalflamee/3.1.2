@@ -19,13 +19,11 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    @Transactional
     public User findById(Long id){
         return userRepository.getOne(id);
     }
 
     @Override
-    @Transactional
     public List<User> findAll(){
         return userRepository.findAll();
     }
